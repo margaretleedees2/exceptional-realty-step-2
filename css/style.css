@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+
+
+/* This is a comment */
+
+/* CSS Syntax 
+
+selector {
+	property:  value;
+	property;  value;
+}
+
+
+*/
+
+
+/* Type Selector */
+
+p { /*select all <p> elements*/
+	font-size; 1em; /* 16 px, 7pt-varies by browser, 100%-varies,  1em=px/16 varies */
+	line-height: 1.5em;
+}
+
+figcaption {
+	/*font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	font-family: Georgia, "New Times Roman", serif;*/
+	font: normal .75em/1.5em 'Elsie Swash Caps', cursive;
+	color: *777;
+	text-align: right;
+}
+
+/* Class Selectors (applied to as many elements as you like) */
+
+.milk-text { /*select element with class="milk-text"*/
+	font: bold 2.6em 'Elsie Swash Caps', cursive;
+	color: gray;
+	text-shadow: 0 2px 3px *000;
+}
+
+/* ID selectors-- applied to only one unique element per page!!!*/
+#logo { /*select elements with id="logo".  looks for all div id="logo"*/
+	background-color: aqua
+
+}
+
+
+/*descendent selector */
+#logo h1{/*only styles h1s if they are inside the element with id="logo"*/
+	font-family: 'Clicker Script', cursive; 
+}
+
+#logo h2{/*only styles h2s if they are inside the element with id="logo"*/
+	font-family: 'Elsie Swash Caps', cursive; 
+}
+
+
+/*Psuedo class selectors-- relationships based on event state or relationship to other elements*/
+/*like when you click on a link how it changes colors */
+
+/*descendent and link state both regular and visited- compound*/
+#details a:link , #details a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#details a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
